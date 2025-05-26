@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Concert - General Ithachi</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #000;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #1a0000;
+      text-align: center;
+      padding: 20px;
+    }
+    header img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+    }
+    .container {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1, h2 {
+      color: #ff0000;
+      text-align: center;
+    }
+    h2 span {
+      color: #ffffff;
+    }
+    .ticket-section, .form-section {
+      background-color: #1a1a1a;
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 20px;
+    }
+    .ticket-section p {
+      margin: 8px 0;
+    }
+    form label {
+      display: block;
+      margin-top: 10px;
+    }
+    form input, form select, form button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: none;
+    }
+    form button {
+      background-color: #ff0000;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #330000;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="itah.jpg" alt="Affiche concert General Ithachi">
+  </header>
+  <div class="container">
+    <h1>GENERAL <span>ITHACHI</span></h1>
+    <h2>14 Juin - 19H à 02H | Pentagon - Kicukiro</h2>
+
+    <div class="ticket-section">
+      <h3>Pré-Vente</h3>
+      <p>🎫 Standard : 10K</p>
+      <p>🎫 VIP : 20K</p>
+      <p>🛋️ Salon de 5 : 125K</p>
+      <p>🛋️ Salon de 10 : 250K</p>
+
+      <h3>Jour-J</h3>
+      <p>🎫 Standard : 15K</p>
+      <p>🎫 VIP : 25K (cocktail, participation à la tombola)</p>
+      <p>🛋️ Salon de 5 : 200K (1 bouteille, tombola, photo artiste)</p>
+      <p>🛋️ Salon de 10 : 300K (2 bouteilles, champagne, tombola, photo artiste)</p>
+    </div>
+
+    <div class="form-section">
+      <form method="POST">
+        <label for="name">Nom complet :</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="ticket">Choisir le ticket :</label>
+        <select id="ticket" name="ticket" required>
+          <option value="">-- Sélectionner --</option>
+          <option>Standard 10K (Pré-vente)</option>
+          <option>VIP 20K (Pré-vente)</option>
+          <option>Salon 5 - 125K (Pré-vente)</option>
+          <option>Salon 10 - 250K (Pré-vente)</option>
+          <option>Standard 15K (Jour-J)</option>
+          <option>VIP 25K (Jour-J)</option>
+          <option>Salon 5 - 200K (Jour-J)</option>
+          <option>Salon 10 - 300K (Jour-J)</option>
+        </select>
+
+        <label for="phone">Numéro MTN Momo :</label>
+        <input type="tel" id="phone" name="phone" placeholder="0781372639" required>
+
+        <button type="submit">Réserver Maintenant</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>DÉPÔT : +250781372639 | RÉSERVATION : +250793220682</p>
+    <p>Vous recevrez une confirmation par e-mail après le paiement via MTN Momo.</p>
+  </div>
+</body>
+</html>
